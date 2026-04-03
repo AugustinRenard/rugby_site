@@ -6,7 +6,7 @@
 @import url('Compenents/cards.css');
 @import url('Compenents/avatar.css');
 
-*, *::before, *::after {
+*::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
