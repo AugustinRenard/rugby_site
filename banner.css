@@ -1,0 +1,72 @@
+.banner-card {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #1d4ed8 100%);
+  border-radius: 20px;
+  padding: 80px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(29, 78, 216, 0.35);
+  margin-bottom: 50px;
+}
+
+.banner-card::before,
+.banner-card::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.08;
+}
+
+.banner-card::before {
+  width: 320px;
+  height: 320px;
+  background: white;
+  top: -80px;
+  right: -80px;
+}
+
+.banner-card::after {
+  width: 200px;
+  height: 200px;
+  background: white;
+  bottom: -60px;
+  left: -40px;
+}
+
+.banner-content {
+  position: relative;
+}
+
+.banner-card h1 {
+  font-size: 64px;
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.banner-card h2 {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 40px;
+  letter-spacing: 0;
+}
+
+@media (max-width: 720px) {
+  .banner-card {
+    padding: 60px 30px;
+  }
+  .banner-card h1 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-card h1 {
+    font-size: 36px;
+  }
+  .banner-card h2 {
+    font-size: 16px;
+  }
+}
