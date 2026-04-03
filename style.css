@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:wght@400;600&display=swap');
+
+@import url('Compenents/container.css');
+@import url('Compenents/banner.css');
+@import url('Compenents/button.css');
+@import url('Compenents/cards.css');
+@import url('Compenents/avatar.css');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lora', serif;
+  font-size: 17px;
+  color: #1a1a2e;
+  background-color: #f0f2f8;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(29, 78, 216, 0.07) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(15, 23, 42, 0.05) 0%, transparent 50%);
+  min-height: 100vh;
+  padding: 40px 20px 60px;
+}
+
+h1, h2, h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 42px;
+  color: #0f172a;
+  margin-bottom: 32px;
+  letter-spacing: 0.06em;
+}
